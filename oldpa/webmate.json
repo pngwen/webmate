@@ -1,0 +1,26 @@
+{
+    "name": "oldpa",
+    "author": "pngwen",
+    "behaviors": [
+        {"image": "oldpa-book.gif", 
+         "dxrange":[0,0], 
+         "dyrange":[0,0],
+         "dtrange":[5, 7]},
+        {"image": "oldpa-fly.gif", 
+         "dxrange":[-10,10], 
+         "dyrange":[-10,10],
+         "dtrange":[3, 5]},
+        {"image": "oldpa-stand-left.gif", 
+         "dxrange":[0,0], 
+         "dyrange":[0,0],
+         "dtrange":[3, 5]},
+        {"image": "oldpa-stand-right.gif", 
+         "dxrange":[0,0], 
+         "dyrange":[0,0],
+         "dtrange":[3, 5]},
+        {"image": "oldpa-walk-left.gif", 
+         "dxrange":[1, 10], 
+         "dyrange":[0,0],
+         "dtrange":[3, 5]}
+    ]
+}
