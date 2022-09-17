@@ -19,6 +19,10 @@
          "dyrange":[0,0],
          "dtrange":[3, 5]},
         {"image": "oldpa-walk-left.gif", 
+         "dxrange":[-1, -10], 
+         "dyrange":[0,0],
+         "dtrange":[3, 5]},
+        {"image": "oldpa-walk-right.gif", 
          "dxrange":[1, 10], 
          "dyrange":[0,0],
          "dtrange":[3, 5]}
