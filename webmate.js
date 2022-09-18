@@ -62,6 +62,14 @@ function webmate_load(dir) {
         this.move(this.x + this.dx, this.y + this.dy);
     }
 
+    mate.drag = function(e) {
+        e.preventDefault();
+        var preview = this.elem.cloneNode(true);
+        preview.style.display = "none";
+        e.dataTransfer.setDragImage(preview, 0, 0);
+        this.move(e.clientX, e.clientY);
+    }
+
 
 
     return mate;
@@ -88,6 +96,8 @@ function webmate(dir) {
 
     // do the first behavior
     mate.choose_behavior(mate);
+
+    mate.elem.ondrag = function(e) { mate.drag(e); }
 
     // display the mate
     document.body.appendChild(mate.elem);
